@@ -19,7 +19,7 @@ def show(request:Request):
     return templates.TemplateResponse('sarathy.html',{'request': request,})
 
 
-@app.post('/predict')
+@app.post('/predict/')
 async def predict_Banknote(data:Banknote):
     inputs = data
     print(data)
