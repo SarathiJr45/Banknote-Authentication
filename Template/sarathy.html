@@ -76,7 +76,7 @@
       <h2>Explore our Bank Note prediction machine learning model.</h2>
     </div>
 
-    <form action="https://banknote-authentication.onrender.com/" method="POST" id="m1Form">
+    <form action="https://banknote-authentication.onrender.com/predict/" method="POST" id="m1Form">
       <label for="Varience">Varience</label><br />
       <input type="text" id="Varience" name="Varience" required /><br />
 
@@ -103,7 +103,7 @@
           entropy: document.getElementById("entropy").value,
         };
 
-        const response = await fetch("https://banknote-authentication.onrender.com/", {
+        const response = await fetch("https://banknote-authentication.onrender.com/predict/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
